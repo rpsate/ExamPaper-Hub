@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+      "banner-cmp": "/components/banner/banner",
+      "subject-cmp": "/components/subject/subject",
+      "ad-cmp": "/components/ad/ad"
+  },
+  "navigationBarTitleText": "ExamPaper Hub"
+}

@@ -1,0 +1,3 @@
+<!--pages/history/history.wxml-->
+<history-cmp wx:for="{{fileData}}" wx:key="index" type="{{item.type}}" title="{{item.title}}" tip="{{item.tip}}" id="{{index}}" bindtap="goViewer"/>
+<line-cmp/>

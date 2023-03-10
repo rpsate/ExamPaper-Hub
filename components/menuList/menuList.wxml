@@ -1,0 +1,19 @@
+<!--components/menuList/menuList.wxml-->
+<view class='container'>
+    <view class='container-inner' wx:for="{{lists}}" wx:key="index">
+        <view class='list' wx:if="{{item[1]!='在线客服'}}" bindtap='onChice' id='{{index}}'>
+            <view class='content'>
+                <image src='{{item[0]}}'></image>
+               <text>{{item[1]}}</text>
+            </view>
+            <image src='./images/sm_right_gray.png'></image>
+        </view>
+        <button open-type='contact' class='list button' wx:else>
+            <view class='content'>
+                <image src='{{item[0]}}'></image>
+               <text>{{item[1]}}</text>
+            </view>
+            <image src='./images/sm_right_gray.png'></image>
+        </button>
+    </view>
+</view>

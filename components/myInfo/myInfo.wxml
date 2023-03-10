@@ -1,0 +1,15 @@
+<!--components/myInfo/myInfo.wxml-->
+<view class='container'>
+    <view class='user-image'>
+        <image src="{{src?src:'./images/user_img_default.png'}}"></image>
+    </view>
+    <view class='info' wx:if="{{login}}">
+        <text class='name'>Hello {{name}}</text>
+        <text class="tip" wx:if="{{count==0}}">您在MIM Studio还没有下载文件</text>
+        <text class='tip' wx:else>您在MIM Studio下载了 <text class='yellow'>{{count}}</text> 个文档啦</text>
+    </view>
+    <view class="info" wx:else>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='name'>立即登录</button>
+        <text class='tip'>未登录</text>
+    </view>
+</view>

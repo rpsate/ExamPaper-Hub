@@ -1,0 +1,6 @@
+<!--components/subject/subject.wxml-->
+<view class='container'>
+    <image class='picture' src='{{picture[iconId]}}'></image>
+    <view class="title {{disable?'disabled':''}}">{{title}}</view>
+    <view class="tip {{disable?'disabled':''}}">{{tip}}</view>
+</view>

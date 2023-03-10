@@ -1,0 +1,67 @@
+/* components/ad/ad.wxss */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750rpx;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.ad-box {
+    position: relative;
+    bottom: 48rpx;
+}
+.ad-box,
+.ad-img {
+    width: 600rpx;
+    height: 800rpx;
+    z-index: 1000;
+}
+
+.tip {
+    position: absolute;
+    top: 20rpx;
+    right: 26rpx;
+    font-size: 14px;
+    color: #333;
+    padding: 12rpx 20rpx;
+    border-radius: 30rpx;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1001;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 40rpx;
+    width: 100%;
+    z-index: 1001;
+}
+
+.btn-group button {
+    border: none;
+    width: 250rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    padding: 0;
+}
+
+.btn-group button::after{
+    border: none;
+}
+
+.btn-group image {
+    width: 50rpx;
+    height: 50rpx;
+    vertical-align: middle;
+}
+
+.btn-group text {
+    display: inline;
+    font-size: 15px;
+    color: #0f80dd;
+    padding-left: 12rpx;
+}

@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class='banner'>
+    <!-- <banner-cmp bindtap="goSubject" data-title="名师真题" data-disable="{{false}}"/> -->
+    <image src='{{imagePath[0]}}' bindtap="goIndexUrl"></image>
+</view>
+<view class='main'>
+    <subject-cmp bindtap="goSubject" wx:for="{{subjects}}" wx:key="index" iconId="{{item[0]}}" title="{{item[1]}}" tip="{{item[2]}}" disable="{{item[3]}}" data-title="{{item[1]}}" data-disable="{{item[3]}}" id="{{index}}"/>
+</view>
+<!-- 广告 -->
+<ad-cmp time="5" src="{{imagePath[1]}}" url="{{advertData.adUrl}}"/>

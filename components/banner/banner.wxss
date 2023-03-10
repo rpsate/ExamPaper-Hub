@@ -1,0 +1,44 @@
+/* components/banner/banner.wxss */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8rpx;
+    padding-top: 22rpx;
+    padding-bottom: 22rpx;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 28rpx;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f80dd;
+}
+
+.tip {
+  font-size: 14px;
+  margin-top: 12rpx;
+  color: #333333;
+}
+
+.btnText {
+  font-size: 12px;
+  color: #f29821;
+  margin-top: 12rpx;
+}
+
+.picture {
+    padding-right: 28rpx;
+}
+
+.picture image {
+    width: 280rpx;
+    height: 190rpx;
+}

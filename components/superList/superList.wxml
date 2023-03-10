@@ -1,0 +1,13 @@
+<!--components/superList/superList.wxml-->
+<view class='container'>
+    <view class='main' bindtap='onSelectSubject'>
+        <image class='picture' src='./images/md_document.png'></image>
+        <text class='content'>{{title}}</text>
+    </view>
+    <view class='btns' wx:if="{{type>0}}">
+        <view wx:for="{{btns}}" wx:key="*this" class='btn' id='{{index}}' bindtap='onSelectClass'>
+            <image src="{{icon[type-1]}}"></image>
+            <text class="{{type==1?'blue':''}}">{{item}}</text>
+        </view>
+    </view>
+</view>

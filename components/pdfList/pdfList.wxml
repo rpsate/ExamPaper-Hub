@@ -1,0 +1,6 @@
+<!--components/pdfList/pdfList.wxml-->
+<view class='container'>
+    <image class="picture" src="./images/sm_pdf.png"></image>
+    <text class='title'>{{title}}</text>
+</view>
+

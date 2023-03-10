@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+      "myInfo-cmp": "/components/myInfo/myInfo",
+      "menuList-cmp": "/components/menuList/menuList"
+  },
+  "navigationBarTitleText": "Personal"
+}

@@ -1,0 +1,4 @@
+<!--components/line/line.wxml-->
+<view class="line">
+  <span>{{string}}</span>
+</view>

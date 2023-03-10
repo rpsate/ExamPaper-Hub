@@ -1,0 +1,18 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <view class="tab-bar-border"></view>
+  <!-- if -->
+  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <view wx:if="{{index!=1}}">
+        <image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></image>
+        <view style="color: {{selected === index ? selectedColor : color}}">{{item.text}}</view>
+    </view>
+    <button class='contact-btn' open-type='contact' wx:else>
+        <image src="/images/tab_contact.png"></image>
+        <view style='color:{{color}}'>Assistant</view>
+    </button>
+    
+  </view>
+  <!-- else -->
+  
+</view>

@@ -1,0 +1,32 @@
+/* components/subject/subject.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8rpx;
+    padding: 22rpx;
+}
+
+.picture {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.title {
+  color: #0f80dd;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 4rpx;
+}
+
+.tip {
+  font-size: 14px;
+  padding-top: 5rpx;
+  color: #666666;
+}
+
+.disabled {
+    color: #999999;
+}

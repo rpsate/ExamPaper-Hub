@@ -1,0 +1,63 @@
+/* components/modal/modal.wxss */
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99999;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 536rpx;
+    background-color: #ffffff;
+    padding: 35rpx;
+    bottom: 200rpx;
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.modal-content {
+    width: 100%;
+    font-size: 13px;
+    padding-top: 20rpx;
+}
+
+.btn-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 80rpx;
+}
+
+.btn-cancel,
+.btn-confirm {
+    font-size: 13px;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 240rpx;
+    color: #ffffff;
+}
+
+.btn-confirm,
+.btn-confirm:active {
+    color: #ffffff;
+    background-color: rgb(13, 112, 193);
+}
+
+.btn-cancel,
+.btn-cancel:active {
+    color: #333333;
+    border: 1px solid rgb(218, 218, 218);
+}

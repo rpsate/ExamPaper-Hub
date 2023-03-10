@@ -1,0 +1,16 @@
+<!--components/nav/nav.wxml-->
+<view class='container'>
+    <view bindtap='goHome' class='icon'>
+        <image src='./images/sm_home.png'></image>
+    </view>
+    <view>
+        <text wx:for='{{catalog}}' wx:key="*this" id='{{index}}' bindtap='navigation'>
+            <text class='oblique'>/</text>
+            <text class='catalog'>{{item}}</text> 
+        </text>
+        <text>
+            <text class='oblique'>/</text>
+            <text>{{active}}</text> 
+        </text>
+    </view>
+</view>

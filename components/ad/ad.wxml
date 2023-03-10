@@ -1,0 +1,17 @@
+<!--components/ad/ad.wxml-->
+<view class='container' wx:if='{{!hidden}}'>
+    <view class='ad-box'>
+        <view class='tip'><text>{{time}}</text>秒后关闭</view>
+        <image class='ad-img' src='{{src}}'></image>
+    <view class='btn-group'>
+        <button open-type="contact">
+            <image src='./images/tab_contact_active.png'></image>
+            <text>立即咨询</text>
+        </button>
+        <button bindtap='goDetail'>
+            <image src='./images/tab_home_active.png'></image>
+            <text>查看详情</text>
+        </button>
+    </view>
+    </view>
+</view>

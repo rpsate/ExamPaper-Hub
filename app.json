@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/subject/subject",
+    "pages/personal/personal",
+    "pages/history/history",
+    "pages/viewer/viewer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0f80dd",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#0f80dd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "ExamPapers",
+        "iconPath": "images/tab_home.png",
+        "selectedIconPath": "images/tab_home_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Assistant",
+        "iconPath": "images/tab_contact.png",
+        "selectedIconPath": "images/tab_contact_active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "Personal",
+        "iconPath": "images/tab_me.png",
+        "selectedIconPath": "images/tab_me_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

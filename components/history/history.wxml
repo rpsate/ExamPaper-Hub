@@ -1,0 +1,8 @@
+<!--components/history/history.wxml-->
+<view class='container'>
+    <image class="picture" src="{{picture[type]}}"></image>
+    <view class="content">
+        <text class='title'>{{title}}</text>
+        <text class='tip'>{{tip}}</text>
+    </view>
+</view>

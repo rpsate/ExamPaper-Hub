@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+      "nav-cmp": "/components/nav/nav",
+      "goodSubject-cmp": "/components/pdfList/pdfList",
+      "superList-cmp": "/components/superList/superList",
+      "modal-cmp": "/components/modal/modal"
+  },
+  "navigationBarTitleText": "Select ExamPapers"
+}

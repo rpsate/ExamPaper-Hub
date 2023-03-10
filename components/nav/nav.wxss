@@ -1,0 +1,27 @@
+/* components/nav/nav.wxss */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #999999;
+    height: 100rpx;
+    border-bottom: 1px solid #dadada;
+}
+
+.icon image {
+    width: 54rpx;
+    height: 54rpx;
+    margin-left: 23rpx;
+    vertical-align: middle;
+}
+
+.oblique {
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}
+.catalog {
+    color: #0f80dd;
+}

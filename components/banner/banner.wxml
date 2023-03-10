@@ -1,0 +1,11 @@
+<!--components/banner/banner.wxml-->
+<view class='container'>
+    <view class='content'>
+        <text class='title'>{{title}}</text>
+        <text class='tip'>{{tip}}</text>
+        <text class='btnText'>{{btnText}}</text>
+    </view>
+    <view class='picture'>
+        <image src='./images/pic_ms.png'></image>
+    </view>
+</view>

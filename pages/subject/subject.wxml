@@ -1,0 +1,8 @@
+<!--pages/subject/subject.wxml-->
+<nav-cmp catalog="{{catalog}}" active="{{catalogActive}}" bind:back="goBack"/>
+<superList-cmp bind:selectSubject="selectSubject" bind:selectClass="selectClass" wx:for="{{subject[0]}}" wx:key="id" title="{{item.title}}" btns="{{item.btns}}" type="{{item.type}}" id="{{index}}"/>
+<goodSubject-cmp title="{{item.title}}" wx:for="{{goodSubject}}" wx:key="index" id="{{index}}" bindtap="selectGoodSubject"/>
+<!--下载三次后提示弹窗-->
+<modal-cmp show="{{show}}" bind:cancel="cancel"/>
+<!--登录授权弹窗 -->
+<modal-cmp openType="getUserInfo" bind:getUserInfo="getUserInfo" cancelText="取消" confirmText="登录" content="亲爱的用户，MIM已为您整理了历年真题资料，但是需要登录后才能下载哦~" show="{{authShow}}"/>

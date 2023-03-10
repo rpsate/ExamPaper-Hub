@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+      "history-cmp": "/components/history/history",
+      "line-cmp": "/components/line/line"
+  },
+  "navigationBarTitleText": "Download Records"
+}

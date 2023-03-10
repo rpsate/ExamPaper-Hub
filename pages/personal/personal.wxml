@@ -1,0 +1,5 @@
+<!--pages/personal/personal.wxml-->
+<myInfo-cmp src="{{userInfo.avatarUrl}}" name="{{userInfo.nickName}}" count="{{count}}" login="{{login}}" bind:getUserInfo="getUserInfo"/>
+
+<menuList-cmp bind:chice="goHistory" lists="{{historyList}}"/>
+<menuList-cmp bind:chice="goOther" lists="{{otherList}}"/>
